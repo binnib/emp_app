@@ -1,0 +1,12 @@
+  .jumbotron {
+    background-color: #eeeeee;
+    color: inherit;
+    height: 7em;
+    margin: 0px;
+  }
+  .no-padding {
+  	padding: 0px !important;
+  }
+  .jumbotron > h1 {
+  	margin: 0px;
+  }

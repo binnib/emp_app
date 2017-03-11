@@ -1,0 +1,41 @@
+<div class="jumbotron text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h1>LOGO</h1>
+      </div>
+      <% unless user_signed_in? %>
+        <div class="col-sm-2">
+          <%= link_to "SignUP", new_user_registration_path %>
+        </div>
+      <% end %>
+        <div class="col-sm-2">
+          <% if user_signed_in? %>
+            <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+          <% else %>
+            <%= link_to "SignIN", new_user_session_path %>
+          <% end %>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor..</p>
+      <p>Ut enim ad..</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor..</p>
+      <p>Ut enim ad..</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>
+      <p>Lorem ipsum dolor..</p>
+      <p>Ut enim ad..</p>
+    </div>
+  </div>
+</div>
